@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+  </title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">  
+  <script src="{% static 'jquery.min.js' %}"></script>
+  <script src="{% static 'register-script.js' %}"></script>
+</head>
+<body bgcolor="violet">
+    <center>
+      <div class="div">
+    <h1 class="header"><u>Register</u></h1>
+    <br>
+    <input type="text" id="txt1" placeholder="enter name"><br><br>
+    <input type="text" id="txt2" placeholder="enter address"><br><br>
+    <a href="{% url 'searchp' %}">search</a>
+      <input type="button" id="btnReg" value="register">
+      </div>
+    </center>
+</body> 
+</html>

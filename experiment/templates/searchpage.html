@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+        </title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">  
+        <script src="{% static 'jquery.min.js' %}"></script>
+        <script src="{% static 'data-fill.js' %}"></script> 
+        <script src="{% static 'search-script.js' %}"></script>
+        <script src="{% static 'update-script.js' %}"></script>
+    </head>
+    <body bgcolor="violet">
+        <center>
+            <div class="div">
+                <h1 class="header"><u>Search</u></h1>
+        <br>
+        <br>
+        <form>
+            <select id="sel1">
+            <input type="button" id="btnSearch" value="search">
+            </select>
+            <br>
+            <br>
+            <input type="textbox" id="txtaddress" placeholder="adress">
+            <br>
+            <BR>
+            <input type="button" id="btnUpdate" value="update">
+           </form>
+          </div>
+        </center>
+    </body>
+</html>`

@@ -1,0 +1,26 @@
+$(document).ready(function(){
+    alert("")
+          $("#btnReg").click(function(){
+              $myname=$("#txt1").val();
+              $myaddress=$("#txt2").val();
+              $.ajax({
+                  url:'regcod',
+                  data:{'name':$myname,'address':$myaddress},
+                  type:'get',
+                  dataType:'json',
+                  success:function(d){
+                      if(d.sts)
+                      {
+                          alert(d.msg);
+                      }
+                      else{
+                          alert(d.msg);
+                      }
+                      
+                  },error:function(d1)
+                  {s
+                      console.log(d1);
+                  }
+              });
+          });
+      });
